@@ -1,0 +1,190 @@
+# depslib dependency file v1.0
+1614643201 source:/media/zaya/SideChain/Verb/Programs/freight/src/main.cpp
+	<fmt/core.h>
+	<filesystem>
+	<toml.hpp>
+	<string>
+	<config.h>
+
+1614485482 /media/zaya/SideChain/Verb/Programs/freight/extern/fmt/include/fmt/core.h
+	<cstdio>
+	<cstring>
+	<iterator>
+	<string>
+	<type_traits>
+	<string_view>
+	<experimental/string_view>
+	<fmt/core.h>
+	"args.h"
+
+1614485482 /media/zaya/SideChain/Verb/Programs/freight/extern/fmt/include/fmt/args.h
+	<functional>
+	<memory>
+	<vector>
+	"core.h"
+
+1614637686 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml.hpp
+	"toml/parser.hpp"
+	"toml/literal.hpp"
+	"toml/serializer.hpp"
+	"toml/get.hpp"
+
+1614637686 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/parser.hpp
+	<cstring>
+	<fstream>
+	<sstream>
+	"combinator.hpp"
+	"lexer.hpp"
+	"region.hpp"
+	"result.hpp"
+	"types.hpp"
+	"value.hpp"
+	<filesystem>
+
+1614637632 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/combinator.hpp
+	<cassert>
+	<cctype>
+	<cstdio>
+	<array>
+	<iomanip>
+	<iterator>
+	<limits>
+	<type_traits>
+	"region.hpp"
+	"result.hpp"
+	"traits.hpp"
+	"utility.hpp"
+
+1614637686 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/region.hpp
+	<memory>
+	<vector>
+	<algorithm>
+	<initializer_list>
+	<iterator>
+	<iomanip>
+	<cassert>
+	"color.hpp"
+
+1614637632 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/color.hpp
+	<cstdint>
+	<ostream>
+
+1614637632 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/result.hpp
+	"traits.hpp"
+	<type_traits>
+	<stdexcept>
+	<utility>
+	<new>
+	<string>
+	<sstream>
+	<cassert>
+
+1614637632 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/traits.hpp
+	<chrono>
+	<forward_list>
+	<string>
+	<tuple>
+	<type_traits>
+	<utility>
+	<string_view>
+
+1614637632 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/utility.hpp
+	<memory>
+	<sstream>
+	<utility>
+	"traits.hpp"
+
+1614637632 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/lexer.hpp
+	<istream>
+	<sstream>
+	<stdexcept>
+	<fstream>
+	"combinator.hpp"
+
+1614637632 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/types.hpp
+	<unordered_map>
+	<vector>
+	"comments.hpp"
+	"datetime.hpp"
+	"string.hpp"
+	"traits.hpp"
+
+1614637686 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/comments.hpp
+	<initializer_list>
+	<iterator>
+	<string>
+	<type_traits>
+	<utility>
+	<vector>
+
+1614637632 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/datetime.hpp
+	<cstdint>
+	<cstdlib>
+	<ctime>
+	<array>
+	<chrono>
+	<iomanip>
+	<ostream>
+	<tuple>
+
+1614637632 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/string.hpp
+	<cstdint>
+	<algorithm>
+	<string>
+	<string_view>
+
+1614637686 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/value.hpp
+	<cassert>
+	"comments.hpp"
+	"exception.hpp"
+	"into.hpp"
+	"region.hpp"
+	"source_location.hpp"
+	"storage.hpp"
+	"traits.hpp"
+	"types.hpp"
+	"utility.hpp"
+
+1614637632 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/exception.hpp
+	<stdexcept>
+	<string>
+	"source_location.hpp"
+
+1614637686 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/source_location.hpp
+	<cstdint>
+	"region.hpp"
+
+1614637632 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/into.hpp
+	"traits.hpp"
+
+1614637632 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/storage.hpp
+	"utility.hpp"
+
+1614637686 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/literal.hpp
+	"parser.hpp"
+
+1614637686 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/serializer.hpp
+	<cstdio>
+	<limits>
+	"lexer.hpp"
+	"value.hpp"
+
+1614637686 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/get.hpp
+	<algorithm>
+	"from.hpp"
+	"result.hpp"
+	"value.hpp"
+
+1614637632 /media/zaya/SideChain/Verb/Programs/freight/extern/toml11/toml/from.hpp
+	"traits.hpp"
+
+1614643960 source:/media/zaya/SideChain/Verb/Programs/freight/src/config.cpp
+	"config.h"
+
+1614644154 /media/zaya/SideChain/Verb/Programs/freight/include/config.h
+	<string>
+	<filesystem>
+	<toml.hpp>
+	<fmt/core.h>
+	<iostream>
+

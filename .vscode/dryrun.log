@@ -1,0 +1,5 @@
+make all --dry-run --keep-going --print-directory
+make: Entering directory '/media/zaya/SideChain/Verb/Programs/frieght'
+g++ -g -std=c++17 -Wall src/main.cpp -L .freight_backup/lib -lfmt -I .freight_backup/include -o build/freight 
+make: Leaving directory '/media/zaya/SideChain/Verb/Programs/frieght'
+ 

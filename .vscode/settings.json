@@ -1,0 +1,9 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "*.cuh": "cpp",
+        "filesystem": "cpp",
+        "stdexcept": "cpp"
+    }
+}
