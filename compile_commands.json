@@ -1,0 +1,42 @@
+[
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-std=c++17",
+            "-Wall",
+            "-g",
+            "-Bstatic",
+            "-Iinclude",
+            "-Iextern/fmt/include",
+            "-Iextern/toml11",
+            "--static",
+            "extern/fmt/build/libfmt.a",
+            "-o",
+            "build/freight",
+            "src/config.cpp"
+        ],
+        "directory": "/media/zaya/SideChain/Verb/Programs/freight",
+        "file": "src/config.cpp"
+    },
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-std=c++17",
+            "-Wall",
+            "-g",
+            "-Bstatic",
+            "-Iinclude",
+            "-Iextern/fmt/include",
+            "-Iextern/toml11",
+            "--static",
+            "extern/fmt/build/libfmt.a",
+            "-o",
+            "build/freight",
+            "src/main.cpp"
+        ],
+        "directory": "/media/zaya/SideChain/Verb/Programs/freight",
+        "file": "src/main.cpp"
+    }
+]

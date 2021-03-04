@@ -1,5 +1,7 @@
-SRC = src/main.cpp
-LIB = -lfmt
+SRC = $(wildcard src/*.cpp)
+INCLUDE = -Iinclude -Iextern/fmt/include -Iextern/toml11
+CXXFLAGS := -std=c++17 -Wall -g -Bstatic
+LIB = extern/fmt/build/libfmt.a
 
 .PHONY : clean all build clean_build
 
@@ -8,40 +10,28 @@ all: build/freight
 
 build/freight: build
 
+### run target
+.PHONY : run
+run:
+	./build/freight
+
+### building phonys
+
+.PHONY : clean_build
 clean_build: clean build
 
+.PHONY : build
 build:
-	g++ -g -std=c++17 -Wall $(SRC) -L .freight_backup/lib $(LIB) -I .freight_backup/include -o build/freight 
+	g++ $(CXXFLAGS) $(SRC) -o build/freight $(INCLUDE) --static $(LIB) -Wl,--as-needed 
 
-### fmt library
-
-#.frieght/include/fmt: .frieght/extern/fmt
-#	cp $(wildcard .frieght/extern/fmt/*.a) .frieght/lib/
-#	cp -r $(wildcard extern/fmt/include/*) .frieght/include/
-	
-#.frieght/extern/fmt:
-#	mkdir .frieght/extern/fmt
-#	cmake -S extern/fmt -B .frieght/extern/fmt
-#	$(MAKE) -C .frieght/extern/fmt
-
-### boost filesystem library
-
-#.frieght/include/boost: .frieght/extern/filesystem
-#	cp $(wildcard .frieght/extern/filesystem/*.a) .frieght/libraries/
-#	cp -r $(wildcard extern/filesystem/include/*) .frieght/include/
-
-#.frieght/extern/filesystem:
-#	mkdir .frieght/extern/filesystem
-#	cmake -S extern/filesystem -B .frieght/extern/filesystem
-#	$(MAKE) -C .frieght/extern/filesystem
 
 ### cleaning
 
-
-
+.PHONY : clean
 clean:
 	rm -rf build/*
 
+.PHONY : cleanall
 cleanall:
 	rm -rf .frieght/extern/*
 	rm -rf .frieght/includes/*

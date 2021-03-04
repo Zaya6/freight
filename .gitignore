@@ -33,3 +33,5 @@
 
 # freight files
 .freight
+.cache
+build/*
